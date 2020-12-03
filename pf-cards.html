@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>theGM.org - Pathfinder Spell Cards</title>
+<link href="style_simple.css" rel="stylesheet" type="text/css" media="screen">
+<link href="card-style.css" rel="stylesheet" type="text/css" media="screen">
+<link href="style_simple.css" rel="stylesheet" type="text/css" media="print">
+<link href="card-style.css" rel="stylesheet" type="text/css" media="print">
+<script src="card-template.js"></script>
+<script src="pf-cards.js"></script>
+<script>
+  function load (spelllist) {
+    var html = '';
+    for (var data in spelllist) {
+      html += spellcard(css_color_level[spelllist[data]['level']], spelllist[data]);
+    }
+    document.body.innerHTML += html; 
+  }
+</script>
+</head>
+<body id="body" onload="load(cards);">
+</body></html>

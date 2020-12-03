@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+@page {
+  size: A4;
+  margin: 14mm;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size:8px;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size:8px;
+}
+
+body {
+  width: 210mm;
+}
+
+table {
+	width: 98%;
+}
+
+th {
+  text-align: left;
+}
+
+.pageBreak {
+	height:0px;
+	width:0px;
+	margin:0px;
+	padding:0px;
+	color: #FFFFFF;
+	page-break-after: always;
+	display:block;
+}
+
+hr {
+  page-break-after: always;
+  border: none;
+  height: 0px;
+  width: 0px;
+  color:#FFF;
+  background-color:#FFF;
+}
+
+.note {
+	text-align: right;
+  position: absolute;
+	bottom: 1px;
+	right: 1px;
+	font-size: 8px;
+	color: #999999;
+  /*visibility: hidden;*/
+}
+.card {
+	width: 60mm;
+	height: 89mm;	
+	border-width:1px;
+	border-color:#999999;
+	border-style:solid;
+	display: block;	
+	float:left;
+	overflow: hidden;
+	position: relative;
+	margin: 1px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+.card h1 {
+  color: #FFFFFF;
+  background:#888888;
+  margin:0px;
+  font-size: 10px;
+  padding: 0px;
+  padding-left: 1px;
+  height:13px;
+  line-height: 13px;
+  vertical-align: middle;
+}
+.card h1 div {
+  padding: 0px;
+  margin:0px;
+  text-align:right;
+  float: right;
+  margin-right:1px;
+  height:13px;
+  line-height: 13px;
+  vertical-align: middle;
+}
+.card table * {
+  font-size: 8px;
+}
+.card h2 {
+  font-size: 100%;
+  color: #FFFFFF;
+  background:#888888;
+  padding: 1px;
+  margin-bottom: 2px;
+  font-size: 9px;
+}
+.card div {
+  padding: 1px;
+}
+.card div div {
+  padding: 0px;
+  font-size: 8px;
+}
+.card div div i {
+  font-size: 8px;
+}
+.card strong {
+  font-size:9px;
+  padding-right:2px;
+}
+
+.card div img {
+  vertical-align: middle;
+}
